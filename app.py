@@ -59,6 +59,9 @@ def update(id):
     else:
         return render_template('update.html', task=task)
 
+@app.route("/test")
+def test():
+    return "<p>Hallo, Agus!</p>"
 
 
 if __name__ == "__main__":
